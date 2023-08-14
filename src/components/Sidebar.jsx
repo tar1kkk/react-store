@@ -3,6 +3,7 @@ import styles from '../styles/Sidebar.module.css';
 import {NavLink} from "react-router-dom";
 
 function Sidebar(props) {
+    console.log(123);
     return (
         <section className={styles.sidebar}>
             <div className={styles.title}>CATEGORIES</div>
