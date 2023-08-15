@@ -13,7 +13,9 @@ function Sidebar() {
                 <ul className={styles.menu}>
                     {list.map(({id,name})=>(
                         <li key={id}>
-                            <NavLink to={`/categories/${id}`}>{name}</NavLink>
+                            <NavLink
+                                className={({isActive})=> `${styles.link}  ${isActive ? styles.active : ''}`}
+                                to={`/categories/${id}`}>{name}</NavLink>
                         </li>
                     ))}
                 </ul>

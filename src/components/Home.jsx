@@ -1,8 +1,11 @@
 import React from 'react';
+import Poster from "./Poster";
 
-function Home(props) {
+function Home() {
     return (
-        <div>Home</div>
+       <div>
+           <Poster/>
+       </div>
     );
 }
 
